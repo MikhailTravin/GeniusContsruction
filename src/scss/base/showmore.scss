@@ -1,0 +1,28 @@
+[data-showmore] {
+}
+[data-showmore-content] {
+}
+[data-showmore-button] {
+	margin: 10px 0px 0px 0px;
+	span {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: math.div(20, 16);
+		letter-spacing: -0.16px;
+		transition: all 0.3s ease 0s;
+		border-bottom: 1px solid $mainColor;
+		&:last-child {
+			display: none;
+		}
+		&:hover {
+			color: $color_blue;
+			border-bottom: 1px solid transparent;
+		}
+		._showmore-active & {
+			display: none;
+			&:last-child {
+				display: block;
+			}
+		}
+	}
+}

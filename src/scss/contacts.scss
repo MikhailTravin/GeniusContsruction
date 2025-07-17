@@ -1,0 +1,137 @@
+.page {
+	// .page__contacts
+	&__contacts {
+		padding: 50px 0px 80px 0px;
+		@media (max-width: $mobile) {
+			padding: 25px 0px 50px 0px;
+		}
+	}
+}
+
+.contacts {
+	// .contacts__container
+	&__container {
+	}
+	// .contacts__body
+	&__body {
+	}
+	// .contacts__content
+	&__content {
+		margin: -30px 0px;
+		@media (max-width: $mobile) {
+			margin: -20px 0px;
+		}
+	}
+	// .contacts__column
+	&__column {
+		padding: 30px 0px;
+		@media (max-width: $mobile) {
+			padding: 20px 0px;
+		}
+	}
+	// .contacts__item
+	&__item {
+		display: flex;
+		height: 100%;
+		box-shadow: 0px 30px 80px -30px rgba(0, 29.000000000000014, 38, 0.2);
+		@media (max-width: $mobile) {
+			flex-direction: column-reverse;
+		}
+	}
+}
+
+.item-contacts {
+	// .item-contacts__images
+	&__images {
+		position: relative;
+		flex: 1 1 60%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		min-height: 300px;
+		@media (max-width: $mobile) {
+			min-height: auto;
+		}
+	}
+	// .item-contacts__contact
+	&__contact {
+		position: relative;
+		z-index: 10;
+		padding: 22px 33px;
+		background-color: $color_blue;
+		max-width: 300px;
+		margin: -10px 0px;
+		@media (max-width: $mobile) {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+	// .item-contacts__block
+	&__block {
+		display: flex;
+		color: $color_white;
+		padding: 10px 0px;
+		transition: all 0.3s ease 0s;
+		&._icon-location {
+			pointer-events: none;
+		}
+		&::before {
+			font-size: 16px;
+			margin: 0px 10px 0px 0px;
+		}
+	}
+	// .item-contacts__links
+	&__links {
+		display: flex;
+		flex-direction: column;
+		a {
+			&:hover {
+				color: #8cc7fb;
+			}
+		}
+	}
+	// .item-contacts__image
+	&__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+	// .item-contacts__desc
+	&__desc {
+		flex: 1 1 40%;
+		padding: 33px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		h2 {
+			font-weight: 700;
+			color: $color_blue;
+			margin: 0px 0px 20px 0px;
+			@media (max-width: $mobile) {
+				font-size: 24px;
+				margin: 0px 0px 15px 0px;
+			}
+		}
+		p {
+			margin: 0px 0px 20px 0px;
+			@media (max-width: $mobile) {
+				margin: 0px 0px 15px 0px;
+			}
+		}
+	}
+	// .item-contacts__button
+	&__button {
+	}
+}

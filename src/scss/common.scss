@@ -1,0 +1,159 @@
+.h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: math.div(44, 40);
+    letter-spacing: -0.4px;
+    margin: 0px 0px 40px 0px;
+    @media (max-width: $mobile) {
+        font-size: 24px;
+        line-height: math.div(26, 24);
+        letter-spacing: -0.25px;
+        margin: 0px 0px 25px 0px;
+    }
+}
+
+.h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: math.div(38, 32);
+    letter-spacing: -0.32px;
+    margin: 0px 0px 35px 0px;
+    @media (max-width: $mobile) {
+        margin: 0px 0px 24px 0px;
+    }
+}
+
+.arrow-next {
+    cursor: pointer;
+}
+
+.arrow-prev {
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 18px 0px 0px 0px;
+    .swiper-pagination-bullet {
+        flex: 0 0 6px;
+        border-radius: 50%;
+        margin: 0px 5px 0px 0px;
+        position: relative;
+        transition: all 0.3s ease 0s;
+        background: #d9d9d9;
+        height: 6px;
+        cursor: pointer;
+        &:last-child {
+            margin: 0px 0px 0px 0px;
+        }
+        &:hover {
+            background: #20232c;
+        }
+    }
+    .swiper-pagination-bullet-active {
+        flex: 0 0 17px;
+        border-radius: 6px;
+        background: #20232c;
+    }
+}
+
+//хлебные крошки
+.breadcrumbs {
+    padding: 50px 15px 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    span {
+        color: #989898;
+        font-size: 14px;
+        font-weight: 400;
+        display: inline;
+        &::before {
+            color: #989898;
+            font-size: 10px;
+            margin: 5px 15px 0px 15px;
+        }
+    }
+    @media (max-width: $mobile) {
+        padding: 30px 15px 0px 15px;
+    }
+    @media (max-width: $mobileSmall) {
+        padding: 15px 15px 0px 15px;
+        /*
+        &::before {
+            content: "";
+            margin: 5px 10px 0px 10px;
+        }
+        */
+    }
+    // .breadcrumbs__current
+    &__current {
+        margin: 0px 0px 0px 0px;
+    }
+    // .breadcrumbs__link
+    &__link {
+        line-height: 1;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            color: $color_blue;
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: math.div(44, 40);
+    letter-spacing: -0.4px;
+    margin: 0px 0px 40px 0px;
+    @media (max-width: $mobile) {
+        font-size: 24px;
+        line-height: math.div(26, 24);
+        letter-spacing: -0.25px;
+        margin: 0px 0px 25px 0px;
+    }
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: math.div(38, 32);
+    letter-spacing: -0.32px;
+    margin: 0px 0px 35px 0px;
+    @media (max-width: $mobile) {
+        margin: 0px 0px 24px 0px;
+    }
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: math.div(24, 20);
+    letter-spacing: -0.2px;
+    @media (max-width: $mobile) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: math.div(18, 16);
+        letter-spacing: -0.16px;
+    }
+}
+
+.favorites {
+    padding: 25px 0px 0px 0px;
+    h1 {
+        text-align: left;
+    }
+    @media (max-width: $mobile) {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+.strong {
+    font-weight: 700;
+}
+
+.wpcf7-response-output{
+    display: none;
+}
