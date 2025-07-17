@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="page__main-home main-home">
+				<div class="main-home__content">
+					<div class="main-home__slider swiper">
+						<div class="main-home__wrapper swiper-wrapper">
+							<div class="main-home__slide swiper-slide">
+								<div class="main-home__video">
+									<video autoplay loop muted>
+										<source src="../files/videos/main-video.mp4" type='video/mp4'>
+									</video>
+									<!--<img src="../img/main-home.png" alt="">-->
+								</div>
+								<a href="https://geniusnets-23.vrealspace.pro/?m=3kjoVXff4hZ&hl=0&play=1&lang=ru"
+									class="main-home__button button">3D MosBuild</a>
+							</div>
+						</div>
+					</div>
+					<div class="main-home__arrows">
+						<div class="main-home__arrow-prev arrow-prev _icon-arrow-2"></div>
+						<div class="main-home__arrow-next arrow-next _icon-arrow-2"></div>
+					</div>
+					<div class="main-home__pagination pagination"></div>
+				</div>
+			</div>
+			<div class="page__main-catalog main-catalog">
+				<div class="main-catalog__container">
+					<div class="main-catalog__h2 h2">Каталог</div>
+					<div class="main-catalog__body">
+						<div class="main-catalog__column">
+							<div class="main-catalog__item">
+								<div class="main-catalog__image">
+									<a href="#">
+										<div class="main-catalog__title h2">Москитные системы</div>
+										<img src="../img/main-home.png" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="main-catalog__column">
+							<div class="main-catalog__item">
+								<div class="main-catalog__image">
+									<a href="#">
+										<div class="main-catalog__title h2">Рулонные шторы</div>
+										<img src="../img/main-home.png" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__main-about main-about">
+				<div class="main-about__container">
+					<div class="main-about__h2 h2">О компании</div>
+					<div class="main-about__body">
+						<div class="main-about__column">
+							<p>
+								Как часто вы смотрите на тумбочку и у вас возникает мысль, что вы хотели бы такую же,
+								но с «перламутровыми пуговицами», чтобы по стилю она подошла бы к Вашему шкафу
+								или кровати?
+								Мы — очень часто. До той степени часто, что решились на отчаянный шаг — делать подобную
+								мебель самостоятельно.
+							</p>
+							<p>
+								И у нас это получилось. И все оказалось максимально просто — не надо делать ярких цветов
+								и сложных форм. Стиль в простоте. Берём обычную кубическую форму, собираем
+								её из качественных материалов в спокойных цветах, затем берём стильный фасад
+								в контрастном
+								цвете. И идеальная тумба готова. Осталось только поставить её на надёжные ножки
+								и оборудовать качественными петлями, чтобы от хлопка дверцы не просыпались соседи.
+								И вот он идеальный рецепт идеальной тумбы для любого назначения и любой комнаты.
+							</p>
+						</div>
+						<div class="main-about__column">
+							<p>
+								У нас нет вензелей и блестящих ручек, нет сложных рисунков на фасадах и ярких кричащих
+								цветов. Мы очень хотели сделать мебель, которую можно поставить в спальню рядом
+								с кроватью,
+								а через год передвинуть её в гостиную и пристроить рядом с телевизором. И нам очень
+								хотелось, чтобы на любом месте и в любой комнате наша мебель гармонично
+								встроилась бы в интерьер.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
